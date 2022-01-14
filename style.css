@@ -1,0 +1,176 @@
+body{
+    background-color: yellow;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f1 {
+    display: flex;
+}
+.f2{
+    display: flex;
+}
+.f3{
+    display: flex;
+}
+.f4{
+    display: flex;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border: 2px solid black;
+    margin-left: 30px;
+    animation-name: sque;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sque{
+    0% {transform: skewX(15deg);}
+    25% {transform: skewX(0deg);}
+    50%{transform: skewX(-15deg);}
+    75%{transform: skewX(0deg);}
+    100% {transform: skewX(15deg);}
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    margin-left: 30px;
+    animation-name: sque2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 50px;
+}
+@keyframes sque2{
+    0% {transform: skewY(15deg);}
+    25% {transform: skewY(0deg);}
+    50%{transform: skewY(-15deg);}
+    75%{transform: skewY(0deg);}
+    100% {transform: skewY(15deg);}
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border: 2px solid black;
+    margin-left: 30px;
+    animation-name: rot;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 50px;
+}
+@keyframes rot{
+    0% {transform : rotate(0deg);}
+    50%{transform: rotate(360deg);}
+    100%{transform: rotate(-360deg);}
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.f41{
+    background-color: brown;
+    animation-name: scale;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes scale{
+    0% {transform: scaleY(1);}
+    50%{transform: scaleY(0.5);}
+    100%{transform: scaleY(1);}
+}
+.f42{
+    background-color: red;
+    animation-name: sca;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sca{
+    0% {transform: scaleX(1);}
+    50%{transform: scaleX(0.5);}
+    100%{transform: scaleX(1);}
+}
+.f43{
+    background-color: green;
+    animation-name: rot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxes{
+    display: flex;
+}
+.element{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top:10px;
+}
+.e1{
+    transition: width 2s;
+}
+.e1:hover{
+    width: 300px;
+}
+.e2{
+    transition: all 2s;
+}
+.e2:hover{
+    width: 300px;
+    height: 300px;
+}
+.e3{
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.e3:hover{
+    width: 300px;
+}
+.e4{
+    transition: width 2s;
+    transition-timing-function: ease;
+}
+.e4:hover{
+    width: 300px;
+}
+.e5{
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+.e5:hover{
+    width: 300px;
+}
+.e6{
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+.e6:hover{
+    width: 300px;
+}
+.e7{
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+.e7:hover{
+    width: 300px;
+}
